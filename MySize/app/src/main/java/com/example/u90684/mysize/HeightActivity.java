@@ -73,6 +73,8 @@ public class HeightActivity extends AppCompatActivity {
     protected void onPause(){
         super.onPause();
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+
+
         SharedPreferences.Editor editor = pref.edit();
         editor.putInt(HEIGHT, Integer.parseInt(mHeight.getText().toString()));
         editor.commit();
